@@ -24,5 +24,5 @@ app.listen(process.env.port, async () => {
         console.log(error);
         console.log("Some error while connicting to DB");
     }
-    console.log(`server is connected to port no 6500`);
+    console.log(`server is connected to port  ${process.env.port}`);
 })
