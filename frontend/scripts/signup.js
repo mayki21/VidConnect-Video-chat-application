@@ -1,5 +1,5 @@
 
-const url = "https://nice-lime-elephant-hat.cyclic.app";
+const url = "https://videochat-auth.onrender.com";
 
 let signbtn = document.getElementById("register-button");
 signbtn.addEventListener("click", (e) => {

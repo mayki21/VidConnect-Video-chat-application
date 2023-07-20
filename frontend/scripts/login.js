@@ -1,4 +1,4 @@
-const url = "https://nice-lime-elephant-hat.cyclic.app";
+const url = "https://videochat-auth.onrender.com";
 
 // login script is  start hare
 let login = document.getElementById("login");
