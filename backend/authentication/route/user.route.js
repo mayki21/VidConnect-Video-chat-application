@@ -1,5 +1,5 @@
 const express = require('express');
-const bcrypt = require("bcrypt");
+const bcrypt=require('bcrypt')
 const jwt = require('jsonwebtoken');
 require("dotenv").config();
 const UserModel = require('../model/usermodel');
@@ -13,12 +13,14 @@ userRouter.post("/register", async (req, res) => {
 
     try {
         isUserPresent = await UserModel.findOne({email})
+        // console.log(isUserPresent)
         if (isUserPresent) 
         {
             return res.send({ "msg": "Login Directly" })
         }
 
-        bcrypt.hash(password, process.env.salt, async (err, hash) => {
+        bcrypt.hash(password, 5, async (err, hash) => {
+            console.log(hash,password)
             const user = new UserModel({name, email, password: hash})
             await user.save()
             res.status(201).send({ "msg": "Registration Succesfull" })
@@ -38,6 +40,7 @@ userRouter.post("/login", async (req, res) => {
 
     try {
         const user = await UserModel.findOne({email})
+        console.log(user)
         if (user) {
             bcrypt.compare(password, user.password, function (err, result) {
                 if (result) {
