@@ -95,16 +95,4 @@ userRouter.get("/blacklist", async (req, res) => {
 })
 
 
-// userRouter.get("/findgoogle", async (req, res) => {
-//     const email = req.body.email
-//     try {
-//         const user = await PostModel.findOne({ email })
-        
-//         res.send(user)
-//     } catch (error) {
-//         res.status(401).send({ "msg": error.message })
-
-//     }
-// })
-
 module.exports = userRouter
