@@ -26,7 +26,8 @@ roomrouter.post("/join", async (req, res) => {
         let isRoomExist = await client.exists(`${roomID}`)
         console.log(isRoomExist);
 
-        if (isRoomExist) {
+        if (isRoomExist) 
+        {
             const DataBaseType = await client.get(`${roomID}`)
             console.log(DataBaseType);
             if (DataBaseType == type) {
@@ -34,7 +35,8 @@ roomrouter.post("/join", async (req, res) => {
             } else {
                 res.send({ "ok": false, "msg": `${type} Room Doesn't Exist` });
             }
-        } else {
+        } 
+        else {
             res.send({ "ok": false, "msg": `Room Doesn't Exist` });
 
         }

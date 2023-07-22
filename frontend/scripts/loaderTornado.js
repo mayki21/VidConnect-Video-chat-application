@@ -12,6 +12,5 @@ window.addEventListener("load", function () {
     hideLoade();
 });
 
-// Example usage
-showLoade(); // Show the loader
-  // Load your content here
+showLoade(); 
+  

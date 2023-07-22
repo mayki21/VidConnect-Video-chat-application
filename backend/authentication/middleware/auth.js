@@ -2,8 +2,7 @@ const jwt = require("jsonwebtoken")
 
 function auth(req,res,next){
     const token = req.headers.authorization;
-    if(token)
-    {
+    if(token){
         var decoded = jwt.verify(token,"accesstoken");
         if(decoded)
         {
@@ -14,7 +13,8 @@ function auth(req,res,next){
         {
             res.status(401).send({"msg":"Invalid User From Middleware auth "})
         }
-    }else{
+    }
+    else{
         res.status(401).send({"msg":"Please Login First "})
 
     }
