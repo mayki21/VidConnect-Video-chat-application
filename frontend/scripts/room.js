@@ -3,14 +3,14 @@ const create = document.getElementById("create-room")
 const title = document.getElementById("title")
 const BASE_SERVER_URL = "https://video-backend-wrol.onrender.com"
 
-// const urlParams = new URLSearchParams(window.location.search)
-// const type = urlParams.get("type"); //remove later 
-const type="videochat"
+const urlParams = new URLSearchParams(window.location.search)
+const type = urlParams.get("type"); //remove later 
+// const type="videochat"
 
 if (type == "message") {
-    title.innerText = `Real Talk Chat Platform`
+    title.innerText = `VidConnect Chat Platform`
 } else if (type == "videochat") {
-    title.innerText = `Real Talk Video Chat Platform`
+    title.innerText = `VidConnect Video Chat Platform`
 } else {
     title.innerText = `Real Talk Meeting Platform`
 }

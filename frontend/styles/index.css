@@ -72,17 +72,17 @@ body {
     padding: 10px 20px;
   }
   
-  .nav-menu ul ul li:hover {
+  /* .nav-menu ul ul li:hover { */
     /* background-color: #555; */
-  }
+  /* } */
   
 
 /* sign-in-part */
 
-.sign-in {
+/* .sign-in { */
   /* border: 2px solid red; */
   
-}
+/* } */
 
 .sign-in ul {
     list-style: none;
@@ -179,11 +179,11 @@ body {
 
 }
 
-.sign-in {
+/* .sign-in { */
    /* border: 2px solid red; */
    /* margin-left: 50px; */
 
-}
+/* } */
 
 .image {
   /* border: 2px solid red; */
