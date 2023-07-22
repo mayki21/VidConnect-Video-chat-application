@@ -56,7 +56,7 @@ else{
         // Transfer to login page here
         setTimeout(()=>{
           window.location.href ="./login.html";
-        },2500)
+        },1000)
       } else {
         Swal.fire({
           icon: "error",
