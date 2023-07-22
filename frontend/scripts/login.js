@@ -18,9 +18,7 @@ login.addEventListener("click", (e) => {
     return;
   }
 
-  // Loader Showing
-  //showLoader();
-  //document.getElementById("login").style.visibility = "hidden";
+
 
   let signdata = {
     email: lemail,
@@ -75,8 +73,7 @@ login.addEventListener("click", (e) => {
         title: "Oops...",
         text: err.message,
       });
-      // hideLoader();
-      //document.getElementById("login").style.visibility = "visible";
+     
     });
 });
 

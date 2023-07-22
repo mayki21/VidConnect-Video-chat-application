@@ -8,10 +8,10 @@ const urlParams = new URLSearchParams(window.location.search)
 const room = urlParams.get("roomID");
 console.log(room);
 const username = JSON.parse(localStorage.getItem("userDetails")).name;
-// const username = "Aman"
 
 
-const socket = io("https://real-talk-chat-server.onrender.com/", { transports: ["websocket"] });
+
+const socket = io("https://chatpartserver.onrender.com/", { transports: ["websocket"] });
 
 socket.emit("joinRoom", ({ username, room }));
 
@@ -100,7 +100,7 @@ document.getElementById('leave').addEventListener("click", ()=>{
 
 async function userLoggedIn() {
     const token = localStorage.getItem("token");
-    const request = await fetch(`https://talkies-authentication-server-1.onrender.com/user/check`,{
+    const request = await fetch(`https://videochat-auth.onrender.com/user/check`,{
       method:"POST",
       headers:{
         "content-type":"application/json",
