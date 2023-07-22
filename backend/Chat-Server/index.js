@@ -17,7 +17,7 @@ const server = http.createServer(app);
 const io = socketio(server);
 
 app.get('/start', (req, res) => {
-  res.send("welcome to Real Talk chat server");
+  res.send("welcome to chat server");
 })
 
 
