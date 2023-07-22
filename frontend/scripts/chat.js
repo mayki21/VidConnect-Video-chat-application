@@ -108,6 +108,8 @@ async function userLoggedIn() {
       body:JSON.stringify({token:token})
     });
   
+
+    
     const response = await request.json();
     if(!response.ok){
       Swal.fire({
