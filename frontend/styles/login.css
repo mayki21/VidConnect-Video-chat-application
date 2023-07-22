@@ -51,7 +51,7 @@
     /* background-color: #c218ec; */
 }
 .form-wrap .top-signup{
-    text-align: right;
+    /* text-align: right; */
     padding-top: 10px;
     font-size: 13px;
     font-weight: 400;
@@ -157,77 +157,7 @@
 #lemail,#lpass{
     color: black;
 }
-/* @media only screen and (max-width: 768px) {
 
-    .img-box {
-        display: none;
-    }
-
-    .login-with img{
-        display: block;
-    }
-    .main-wrap {
-    background: url("https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg?w=1060&t=st=1683531577~exp=1683532177~hmac=3f29594210bf9ea27a641d63a598f0d88c473ab4e5ccc66c884074af16a9ecc3")
-
-    }
-  } */
-
-  /* @media only screen and (max-width: 768px) {
-    .img-box {
-      display: none;
-    }
-  
-    .main-wrap {
-      background: url("https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg?w=1060&t=st=1683531577~exp=1683532177~hmac=3f29594210bf9ea27a641d63a598f0d88c473ab4e5ccc66c884074af16a9ecc3");
-    }
-  
-    .box-container {
-      flex-direction: column;
-      height: auto;
-      width: 100%;
-    }
-  
-    .form-wrap {
-      width: 100%;
-      padding: 20px 40px;
-    }
-  
-    .img-box img {
-      margin-left: auto;
-      margin-right: auto;
-    }
-  
-    .mid-container {
-      padding-top: 20px;
-      padding-left: 0;
-    }
-  
-    .mid-container .form input {
-      width: 100%;
-      box-sizing: border-box;
-      padding: 6px 8px;
-    }
-  
-    .top-signup {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-  
-    .signup-btn {
-      margin-top: 10px;
-      flex: 0 0 auto;
-    }
-  }
-  
-  @media only screen and (max-width: 1024px) {
-    .box-container {
-      width: 90%;
-      height: auto;
-    }
-  }
-   */
 
    @media only screen and (max-width: 768px) {
     .img-box {
@@ -299,7 +229,7 @@
   }
   .top-signup {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     margin-bottom: 10px;
   }

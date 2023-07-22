@@ -7,6 +7,10 @@ body{
     font-family: 'Open Sans', sans-serif;
     background-color: #FAFAFA;
 }
+
+#logo {
+    height: 200px;
+  }
 #title {
     font-size: 3em;
     font-weight: bold;

@@ -3,6 +3,9 @@ body {
     background-image: url("https://img.freepik.com/premium-photo/blank-blue-cement-wall-texture-background_7190-199.jpg?w=996");
     background-color: #f2f2f2;
   }
+  #logo {
+    height: 150px;
+  }
   
   /* Center the logo */
   #logoDiv {
@@ -17,7 +20,7 @@ body {
     border-radius: 10px;
 
     width: 20%;
-    height: auto;
+    /* height: auto; */
   }
   
   /* Style the header */
