@@ -249,6 +249,46 @@ VidConnect + Bing mashup: Stunning backgrounds for VidConnect calls + instant im
 </html>
 
 <script>
+  authserver()
+  videoserver()
+  chatserver()
+  function authserver(){
+    fetch("https://videochat-auth.onrender.com/start")
+    .then((res)=>{
+        return res.json()
+    })
+    .then((data)=>{
+        console.log(data)
+    })
+    .catch((err)=>{
+        console.log(err)
+    })
+  }
+  function videoserver(){
+    fetch("https://video-backend-wrol.onrender.com/start")
+    .then((res)=>{
+        return res.json()
+    })
+    .then((data)=>{
+        console.log(data)
+    })
+    .catch((err)=>{
+        console.log(err)
+    })
+  }
+  function chatserver(){
+    fetch("https://chatpartserver.onrender.com/start")
+    .then((res)=>{
+        return res.json()
+    })
+    .then((data)=>{
+        console.log(data)
+    })
+    .catch((err)=>{
+        console.log(err)
+    })
+  }
+
   const logout = document.querySelector(".dom-manipulation");
   // dom-manipulation-logout
   const full_name = document.getElementById("logout");
