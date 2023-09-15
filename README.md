@@ -1,12 +1,4 @@
 
-# VidCOnnect:Online Chat Platform
-
-<div style="display: flex; justify-content: center; align-items: center;">
-  <img style="border-radius: 10px" src="https://github-production-user-asset-6210df.s3.amazonaws.com/119395145/237085721-15be1142-35b3-4608-a547-9a8b1528b2a3.png" alt="error">
-</div>
-
-
-
 # VidConnect - Real Time Video Chat Application
 
 **VidCOnnect is a communications platform that allows users to connect with video, audio and chat.**
